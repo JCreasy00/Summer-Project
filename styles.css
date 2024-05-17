@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #e0f7fa, #006064);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #050a70;
+}
+
+.container {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item:hover {
+    font-size: 1.8rem;
+    transform: scale(1.1);
+}
+
+/* Styles for the container to use flexbox */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px; /* Optional: add some padding at the bottom */
+}
+
+/* Styles for the grid container */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(45, 26px); /* 45 columns, each 26px wide */
+    grid-template-rows: repeat(30, 26px); /* 30 rows, each 26px high */
+    gap: 1px; /* Space between grid items */
+    margin-bottom: 10px; /* Space below the grid */
+}
+
+/* Styles for individual grid cells */
+.grid-cell {
+    width: 26px; /* Updated cell width */
+    height: 26px; /* Updated cell height */
+    background-color: #fff; /* Default cell color */
+    border: 1px solid #ccc; /* Cell border */
+}
+
+.grid-cell.start {
+    background-color: #4CAF50; /* Start node color */
+}
+
+.grid-cell.end {
+    background-color: #f44336; /* End node color */
+}
+
+.grid-cell.weighted {
+    background-color: #2196F3; /* Weighted node color */
+}
+
+/* Styles for the control panel */
+.control-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+}
+
+/* Add active state styles for the buttons */
+button.active {
+    background-color: #4CAF50; /* Active button color */
+    color: white;
+}
+
+/* Styles for the grid cells in the shortest path */
+.shortest-path {
+    background-color: yellow; /* Example color for visualization */
+    transition: background-color 0.7s ease; /* Optional: Add transition for smoother visualization */
+}
+
+
